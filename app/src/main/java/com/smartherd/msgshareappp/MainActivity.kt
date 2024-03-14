@@ -22,8 +22,9 @@ class MainActivity : AppCompatActivity() {
         clickmetwo.setOnClickListener {
             val usermsg = findViewById<EditText>(R.id.etusermessage)
             val message : String = usermsg.text.toString()
-            Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
             val intent = Intent(this, SecondActivity::class.java)
+
+            intent.putExtra("user_message", message)
             startActivity(intent)
         }
     }
