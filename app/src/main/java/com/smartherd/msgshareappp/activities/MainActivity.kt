@@ -5,9 +5,9 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.smartherd.msgshareappp.R
+import com.smartherd.msgshareappp.showToast
 
 class MainActivity : AppCompatActivity() {
     @SuppressLint("MissingInflatedId")
@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
         val usermsg = findViewById<EditText>(R.id.etusermessage)
         val clickme = findViewById<Button>(R.id.Btnshowtoast)
         clickme.setOnClickListener {
-            Toast.makeText(this, "Button clicked", Toast.LENGTH_SHORT).show()
+            showToast("Button clicked")
         }
         val clickmetwo = findViewById<Button>(R.id.btnSendMsgToNextActivity)
         clickmetwo.setOnClickListener {
