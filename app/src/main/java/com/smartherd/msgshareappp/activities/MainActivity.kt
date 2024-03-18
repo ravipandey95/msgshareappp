@@ -1,4 +1,4 @@
-package com.smartherd.msgshareappp
+package com.smartherd.msgshareappp.activities
 
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -7,6 +7,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.smartherd.msgshareappp.R
 
 class MainActivity : AppCompatActivity() {
     @SuppressLint("MissingInflatedId")
@@ -27,7 +28,6 @@ class MainActivity : AppCompatActivity() {
             intent.putExtra("user_message", message)
             startActivity(intent)
         }
-
         val clickthree = findViewById<Button>(R.id.btnShareToOtherApps)
         clickthree.setOnClickListener{
             val message : String = usermsg.text.toString()
@@ -36,6 +36,11 @@ class MainActivity : AppCompatActivity() {
             intent.putExtra(Intent.EXTRA_TEXT, message)
             intent.type = "text/plain"
             startActivity(Intent.createChooser(intent, " Share To :"))
+        }
+        val clickfour = findViewById<Button>(R.id.btnRecyclerViewDemo)
+        clickfour.setOnClickListener {
+            val intent = Intent(this, HobbiesActivity::class.java )
+            startActivity(intent)
         }
     }
 }

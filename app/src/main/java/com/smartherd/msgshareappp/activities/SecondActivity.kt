@@ -1,9 +1,10 @@
-package com.smartherd.msgshareappp
+package com.smartherd.msgshareappp.activities
 
 import android.os.Bundle
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.smartherd.msgshareappp.R
 
 class SecondActivity: AppCompatActivity() {
 
