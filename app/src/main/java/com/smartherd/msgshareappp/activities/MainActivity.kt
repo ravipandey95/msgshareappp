@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
         val clickme = findViewById<Button>(R.id.Btnshowtoast)
         clickme.setOnClickListener {
             Log.i(TAG, "Button was clicked!")
-            showToast("Button clicked")
+            showToast(resources.getString(R.string.btn_was_clicked))
         }
         val clickmetwo = findViewById<Button>(R.id.btnSendMsgToNextActivity)
         clickmetwo.setOnClickListener {
@@ -42,7 +42,7 @@ class MainActivity : AppCompatActivity() {
             intent.action = Intent.ACTION_SEND
             intent.putExtra(Intent.EXTRA_TEXT, message)
             intent.type = "text/plain"
-            startActivity(Intent.createChooser(intent, " Share To :"))
+            startActivity(Intent.createChooser(intent, resources.getString(R.string.share_to)))
         }
         val clickfour = findViewById<Button>(R.id.btnRecyclerViewDemo)
         clickfour.setOnClickListener {

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MsgShareAppp</string>
+
+    <string name="btn_show_toast">Afficher un toast</string>
+    <string name ="et_user_msg">Saisir le message de utilisateur</string>
+    <string name="send_data_to_next_activity">Envoyer des données à lactivite suivante</string>
+    <string name="share_to_other_apps">partager avec dautres applications</string>
+    <string name="btn_hobbies">montrer mes passe-temps</string>
+
+    <string name="btn_was_clicked">bouton cliqué</string>
+    <string name="share_to">partager à</string>
+</resources>
